@@ -140,7 +140,7 @@ const Home = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     await axios
-      .post("http://localhost:3003/justondata", juston)
+      .post("http://localhost:5000/justondata", juston)
       .then((response) => console.log("data posted", response))
       .catch((error) => console.log(error));
     history("/report");

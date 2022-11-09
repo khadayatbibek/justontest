@@ -30,8 +30,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "json-server": "json-server --watch src/Database/Database.json --port 3003",
-    "start:all": "concurrently \"npm start\" \"npm run json-server\"  ",
+    "server": "json-server --watch ./Database.json --port 5000",
+    "start:all": "concurrently \"npm start\" \"npm run server\"  ",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

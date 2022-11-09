@@ -14,7 +14,7 @@ const Report = () => {
 
   // load Userdata from json server
   const loadData = async () => {
-    const result = await axios.get("http://localhost:3003/justondata");
+    const result = await axios.get("http://localhost:5000/justondata");
 
     setJustonData(result.data.reverse());
   };
